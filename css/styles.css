@@ -1,0 +1,61 @@
+h1 {
+    color: rosybrown;
+}
+
+@media (max-width: 30em) {
+    body {
+        font-size: 80%;
+    }
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5em 10em 8em 5em;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+p {
+    padding-bottom: 0.5em;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-bottom: 0.5em;
+}
+
+ol {
+    padding-bottom: 0.5em;
+}
+
+li.within {
+    color: indianred;
+    list-style-type: "⚠️";
+}
+
+li em {
+    color: darkslateblue;
+}
+
+h1+p {
+    font-style: italic;
+}
+
+a:hover {
+    color: navy;
+    font-weight: bold;
+}
+
+/* These apply to the hummus icon at the top of the page */
+#icon {
+    width: 3em;
+    height: 3em;
+    transition: transform 3s linear;
+}
+
+#icon:hover {
+    transform: rotate(2turn);
+}
