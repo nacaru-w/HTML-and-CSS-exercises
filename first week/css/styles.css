@@ -49,6 +49,14 @@ a:hover {
     font-weight: bold;
 }
 
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 50%;
+    padding: 1em;
+}
+
 /* These apply to the hummus icon at the top of the page */
 #icon {
     width: 3em;
