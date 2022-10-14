@@ -67,3 +67,22 @@ nav {
 #icon:hover {
     transform: rotate(2turn);
 }
+
+#garlic {
+    width: 10em;
+    height: 10em;
+}
+
+#montferrat {
+    width: 19em;
+    height: 15em;
+}
+
+figure {
+    margin: 0 auto;
+    text-align: center;
+}
+
+figcaption {
+    font-size: x-small;
+}
