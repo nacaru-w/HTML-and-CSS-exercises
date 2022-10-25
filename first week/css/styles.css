@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+
 h1 {
     color: rosybrown;
 }
@@ -17,6 +19,17 @@ body {
 
 p {
     padding-bottom: 0.5em;
+}
+
+article p:first-child::first-letter {
+    font-size: 4em;
+    font-family: Norican;
+    float: left;
+    padding-right: 0.3em;
+    border: 0.05em;
+    border-style: groove;
+    border-spacing: 0.05em;
+    background-color: #f5ebdf;
 }
 
 li {
@@ -47,6 +60,10 @@ h1+p {
 a:hover {
     color: navy;
     font-weight: bold;
+}
+
+a[href="hummus.html"] {
+    color: rosybrown;
 }
 
 nav {
