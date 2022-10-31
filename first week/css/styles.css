@@ -103,3 +103,7 @@ figure {
 figcaption {
     font-size: x-small;
 }
+
+ol li:nth-child(odd) {
+    color: coral;
+}
