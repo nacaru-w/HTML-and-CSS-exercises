@@ -1,7 +1,24 @@
 /* General setup */
 
+@font-face {
+    font-family: 'alegreyaregular';
+    src: url('fonts/alegreya-regular-webfont.woff2') format('woff2'),
+        url('fonts/alegreya-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amagrobold';
+    src: url('fonts/amagro-webfont.woff2') format('woff2'),
+        url('fonts/amagro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
-    font-size: 10px;
     margin: 0;
     font-family: sans-serif;
 }
@@ -10,20 +27,22 @@ body {
     width: 80%;
     max-width: 800px;
     margin: 0 auto;
+    font-family: alegreyaregular;
 }
 
 /* Typography */
 
 h1 {
-    font-size: 3.2rem;
+    font-size: 3em;
+    font-family: 'amagrobold';
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 2em;
 }
 
 p {
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-size: 1em;
+    line-height: 1.6em;
     word-spacing: 0.6rem;
 }
