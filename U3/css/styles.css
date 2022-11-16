@@ -26,7 +26,7 @@ html {
 body {
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 4em auto;
     font-family: alegreyaregular;
 }
 
@@ -45,4 +45,25 @@ p {
     font-size: 1em;
     line-height: 1.6em;
     word-spacing: 0.6rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+td {
+    text-align: center;
+}
+
+caption {
+    padding: 10px;
 }
