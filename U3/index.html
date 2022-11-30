@@ -126,11 +126,40 @@
                     <label for="nb">No binario</label>
                 </fieldset>
             </li>
-            <li class="button">
-                <button type="submit">Enviar</button>
-            </li>
 
         </ul>
+        <section>
+            <h3>Payment information</h3>
+            <p>
+                <label for="card">
+                    <span>Card type:</span>
+                </label>
+                <select id="card" name="usercard">
+                    <option value="visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </p>
+            <p>
+                <label for="number">
+                    <span>Card number:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="tel" id="number" name="cardnumber" />
+            </p>
+            <p>
+                <label for="expiration">
+                    <span>Expiration date:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" id="expiration" required="true" placeholder="MM/YY"
+                    pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
+            </p>
+        </section>
+        <div class="button">
+            <button type="submit">Enviar</button>
+        </div>
+
     </form>
 
 </body>
