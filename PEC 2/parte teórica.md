@@ -45,27 +45,23 @@ Sobre la utilización de formularios, responde a las siguientes preguntas:
 
 `label` permite configurar etiquetas con texto descriptivo asociadas a las diferentes entidades del formulario. La asociación se hace mediante dos formas:
 
-* Usando el atributo `for`, cuyo valor debe de ser igual al del atributo `id` del elemento `input` al que se quiere relacionar.
+* Usando el atributo `for`, cuyo valor debe de ser igual al del atributo `id` del elemento `input` al que se quiere relacionar:
 
 ```html
-
 <label for="ejemplo">Esto es un ejemplo de etiqueta</label>
 <input type="textbox" name="nombre_de_ejemplo" id="ejemplo">
-
 ```
-
-* Incluyendo el elemento `input` dentro del elemento `label`
+* Incluyendo el elemento `input` dentro del elemento `label`:
 
 ```html
-
 <label>
     Esto es un ejemplo de etiqueta
     <input type="textbox" name="nombre_de_ejemplo" id="ejemplo">
 </label>
-
 ```
 
 La etiqueta `label` permite una mayor accesibilidad al poder ser identificada por lectores de pantalla y otros tipos de tecnología asistida, y permite a los usuarios acceder al campo a través de la selección de la etiqueta.
+
 ## Pregunta 3
 
 Sobre CSS, responde a las siguientes preguntas:
