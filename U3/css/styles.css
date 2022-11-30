@@ -95,6 +95,7 @@ label {
     text-align: right;
 }
 
+
 input,
 textarea {
     /* To make sure that all text fields have the same font settings
@@ -133,4 +134,10 @@ button {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
     margin-left: 0.5em;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
 }
