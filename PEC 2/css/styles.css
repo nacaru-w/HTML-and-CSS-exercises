@@ -1,0 +1,371 @@
+@media only screen and (max-width: 600px) {
+    body.main_page {
+        margin-left: 7%
+    }
+
+    fieldset.data li {
+        flex: content;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body.main_page {
+        margin-left: 25%
+    }
+}
+
+i {
+    font-style: normal;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+p,
+h1,
+h2 {
+    color: rgb(23, 23, 23);
+}
+
+a:hover {
+    color: rgb(222, 12, 23)
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5em;
+}
+
+ul {
+    line-height: 2.25em;
+}
+
+h1 {
+    padding-top: 1em;
+}
+
+body.main_page {
+    background-image: url('../img/home-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: grid;
+    color: white;
+    height: 95vh;
+    width: 95vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+body a {
+    text-decoration: none;
+    color: unset;
+}
+
+body.main_page a {
+    border-bottom: none;
+}
+
+body.main_page img {
+    display: inline-block;
+}
+
+body.main_page main div.main_title {
+    display: inline-block;
+    font-size: clamp(3.5rem, 6vw, 7rem);
+    font-weight: bold;
+    margin-bottom: 0em;
+    white-space: nowrap;
+}
+
+#main_words {
+    padding-left: 0.15em;
+}
+
+body.main_page main {
+    margin: auto 0 auto 0;
+}
+
+body.main_page main .subtitle {
+    font-weight: bold;
+    font-size: min(4vw, 1.75rem);
+    white-space: nowrap;
+}
+
+body {
+    margin: 0;
+}
+
+body.main_page footer {
+    margin-bottom: 3vh;
+}
+
+body footer .author_in_footer {
+    font-size: 0.7rem;
+    padding-bottom: 0.4em;
+}
+
+body header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+body header .header_title_and_logo,
+body header nav {
+    padding-left: 20%;
+}
+
+body header.main_header .header_title_and_logo,
+body header.main_header nav {
+    padding-left: 0;
+}
+
+body.main_page .main_header {
+    background-color: unset;
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+body header figure {
+    width: 2.5em;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0.5em;
+}
+
+body header img {
+    width: 100%;
+    height: auto;
+}
+
+body header .header_title {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+body header nav .current {
+    font-weight: bold;
+}
+
+body main {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+body main figure {
+    margin: 2em auto 2em auto;
+}
+
+body main figure>* {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    text-align: center;
+}
+
+body main figure figcaption {
+    font-size: 0.75rem;
+    padding: 1em 0 1em 0;
+}
+
+
+body footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 3em auto 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+body footer .author_in_footer,
+body footer .footer_nav {
+    padding-left: 20%;
+}
+
+body footer.main_footer .author_in_footer,
+body footer.main_footer .footer_nav {
+    padding-left: 0;
+}
+
+body footer.main_footer {
+    padding: 0;
+    background-color: unset;
+}
+
+body main div.authorship {
+    font-size: 0.7rem;
+}
+
+body main div.rutas_box {
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: grid;
+    padding: 1em 0 1.5em 0;
+}
+
+body main div.rutas_box .sentence {
+    font-size: 1.5rem;
+    padding: 0 1em 0 1em;
+}
+
+body main div.rutas_box .subtitle {
+    font-size: 0.9rem;
+}
+
+body a {
+    border-bottom: 1px dotted black;
+}
+
+body main a:hover {
+    border-bottom: 1px dotted rgb(222, 12, 23);
+    color: rgb(222, 12, 23);
+}
+
+body table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+body table figure {
+    margin: 0;
+}
+
+body table th:first-child {
+    text-align: left;
+    align-content: left;
+    padding-left: 0.3em;
+}
+
+body table th[scope="col"] {
+    font-weight: normal;
+}
+
+body table th[scope="col"]:first-child figure {
+    display: inherit;
+}
+
+body table td {
+    padding: 0.5em 0 0.5em 0
+}
+
+body table caption {
+    border-top: solid black 1px;
+}
+
+body table thead {
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+body table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body table tfoot {
+    background-color: unset;
+    border-bottom: solid black 1px;
+    text-align: left;
+}
+
+body table tfoot td {
+    padding: 0.5em 0 0.5em 0;
+    font-size: 0.7rem;
+}
+
+/* Form rules start here */
+input,
+select {
+    box-sizing: border-box;
+    border: 1px solid #999;
+    height: 3em;
+    background-color: white;
+}
+
+select {
+    width: 50%;
+    padding-left: 1em;
+}
+
+button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(222, 12, 23);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    height: unset;
+}
+
+textarea {
+    width: 98.5%;
+}
+
+fieldset.data {
+    justify-content: space-between;
+}
+
+fieldset.data ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+fieldset.data li {
+    width: 50%;
+}
+
+fieldset.data input {
+    width: 95%;
+}
+
+fieldset.pago input {
+    width: 100%;
+}
+
+input:valid {
+    background-color: palegreen;
+}
+
+input:invalid {
+    background-color: lightpink;
+}
+
+body form ul {
+    list-style-type: none;
+    padding: 0em;
+}
+
+body form legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+body form span.important {
+    font-weight: bold;
+}
+
+body form p {
+    line-height: 1.4em;
+}
+
+/* Form rules end here */

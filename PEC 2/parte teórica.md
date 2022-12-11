@@ -68,4 +68,4 @@ Sobre CSS, responde a las siguientes preguntas:
 
 ### 1. ¿Qué entendemos por modelo de cajas en CSS? ¿Qué diferencia hay entre el modelo de cajas estándar y el modelo de cajas alternativo? ¿Con qué propiedad podemos activar el modelo de cajas alternativo?
 
-### 2. Investiga sobre las funciones `calc()`, `var()`, y `clamp()` de CSS. ¿Para qué las podemos usar? Aporta un ejemplo de cóidgo de cada una de ellas dentro de una hoja de estilos.
+### 2. Investiga sobre las funciones `calc()`, `var()`, y `clamp()` de CSS. ¿Para qué las podemos usar? Aporta un ejemplo de código de cada una de ellas dentro de una hoja de estilos.
