@@ -1,3 +1,4 @@
+/* Media queries start here */
 @media only screen and (max-width: 600px) {
     body.main_page {
         margin-left: 7%
@@ -13,6 +14,10 @@
         margin-left: 25%
     }
 }
+
+/* Media queries end here */
+
+/* Global rules start here */
 
 i {
     font-style: normal;
@@ -33,11 +38,6 @@ a:hover {
     color: rgb(222, 12, 23)
 }
 
-body {
-    font-family: 'Work Sans', sans-serif;
-    line-height: 1.5em;
-}
-
 ul {
     line-height: 2.25em;
 }
@@ -46,66 +46,27 @@ h1 {
     padding-top: 1em;
 }
 
-body.main_page {
-    background-image: url('../img/home-hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    display: grid;
-    color: white;
-    height: 95vh;
-    width: 95vh;
-    grid-template-rows: auto 1fr auto;
+iframe {
+    border: 0px;
+}
+
+/* Global body rules start here */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
 }
 
 body a {
     text-decoration: none;
     color: unset;
+    border-bottom: 1px dotted black;
 }
 
-body.main_page a {
-    border-bottom: none;
-}
+/* Global body rules end here */
 
-body.main_page img {
-    display: inline-block;
-}
-
-body.main_page main div.main_title {
-    display: inline-block;
-    font-size: clamp(3.5rem, 6vw, 7rem);
-    font-weight: bold;
-    margin-bottom: 0em;
-    white-space: nowrap;
-}
-
-#main_words {
-    padding-left: 0.15em;
-}
-
-body.main_page main {
-    margin: auto 0 auto 0;
-}
-
-body.main_page main .subtitle {
-    font-weight: bold;
-    font-size: min(4vw, 1.75rem);
-    white-space: nowrap;
-}
-
-body {
-    margin: 0;
-}
-
-body.main_page footer {
-    margin-bottom: 3vh;
-}
-
-body footer .author_in_footer {
-    font-size: 0.7rem;
-    padding-bottom: 0.4em;
-}
+/* Global header rules star here */
 
 body header {
     width: 100%;
@@ -113,7 +74,7 @@ body header {
     color: white;
     margin: 0 auto;
     padding-top: 1.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 
 body header .header_title_and_logo,
@@ -121,15 +82,15 @@ body header nav {
     padding-left: 20%;
 }
 
-body header.main_header .header_title_and_logo,
-body header.main_header nav {
-    padding-left: 0;
+body header ul {
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0;
+    margin-top: 0;
 }
 
-body.main_page .main_header {
-    background-color: unset;
-    margin-top: 1.5em;
-    padding: 0;
+body header ul li {
+    padding: 0 0.2em 0 0.2em;
 }
 
 body header figure {
@@ -154,6 +115,10 @@ body header nav .current {
     font-weight: bold;
 }
 
+/* Global header rules end here */
+
+/* Global main rules start here */
+
 body main {
     max-width: 60%;
     margin: 0 auto;
@@ -175,10 +140,23 @@ body main figure figcaption {
     padding: 1em 0 1em 0;
 }
 
+body main a:hover {
+    border-bottom: 1px dotted rgb(222, 12, 23);
+    color: rgb(222, 12, 23);
+}
+
+/* Global main rules end here */
+
+/* Global footer rules start here */
+
+body footer .author_in_footer {
+    font-size: 0.7rem;
+    padding-bottom: 0.4em;
+}
 
 body footer {
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     margin: 3em auto 0 auto;
     padding-top: 1rem;
@@ -190,6 +168,66 @@ body footer .footer_nav {
     padding-left: 20%;
 }
 
+/* Global footer rules end here */
+
+/* Global rules end here */
+
+/* index.html rules start here */
+
+body.main_page {
+    background-image: url('../img/home-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: grid;
+    color: white;
+    height: 95vh;
+    width: 95vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+body.main_page a {
+    border-bottom: none;
+}
+
+body.main_page img {
+    display: inline-block;
+}
+
+body header.main_header .header_title_and_logo,
+body header.main_header nav {
+    padding-left: 0;
+}
+
+body.main_page .main_header {
+    background-color: unset;
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+body.main_page main div.main_title {
+    display: inline-block;
+    font-size: clamp(3.5rem, 6vw, 7rem);
+    font-weight: bold;
+    margin-bottom: 0em;
+    white-space: nowrap;
+}
+
+#main_words {
+    padding-left: 0.15em;
+}
+
+body.main_page main {
+    margin: auto 0 auto 0;
+}
+
+body.main_page main .subtitle {
+    font-weight: bold;
+    font-size: min(4vw, 1.75rem);
+    white-space: nowrap;
+}
+
 body footer.main_footer .author_in_footer,
 body footer.main_footer .footer_nav {
     padding-left: 0;
@@ -198,11 +236,20 @@ body footer.main_footer .footer_nav {
 body footer.main_footer {
     padding: 0;
     background-color: unset;
+    margin-bottom: 3vh;
 }
+
+/* index.html rules end here */
+
+/* practica-el-running.html rules start here */
 
 body main div.authorship {
     font-size: 0.7rem;
 }
+
+/* practica-el-running.html rules end here */
+
+/* rutas box rules start here */
 
 body main div.rutas_box {
     max-width: 100%;
@@ -221,14 +268,9 @@ body main div.rutas_box .subtitle {
     font-size: 0.9rem;
 }
 
-body a {
-    border-bottom: 1px dotted black;
-}
+/* rutas box rules end here */
 
-body main a:hover {
-    border-bottom: 1px dotted rgb(222, 12, 23);
-    color: rgb(222, 12, 23);
-}
+/* Table rules start here */
 
 body table {
     width: 100%;
@@ -242,7 +284,6 @@ body table figure {
 
 body table th:first-child {
     text-align: left;
-    align-content: left;
     padding-left: 0.3em;
 }
 
@@ -254,12 +295,17 @@ body table th[scope="col"]:first-child figure {
     display: inherit;
 }
 
+body table th {
+    padding: 0.5em 0 0.5em 0;
+}
+
 body table td {
     padding: 0.5em 0 0.5em 0
 }
 
 body table caption {
     border-top: solid black 1px;
+    padding: 0.5em 0 0.5em 0;
 }
 
 body table thead {
@@ -281,6 +327,8 @@ body table tfoot td {
     padding: 0.5em 0 0.5em 0;
     font-size: 0.7rem;
 }
+
+/* Table rules end here */
 
 /* Form rules start here */
 input,
@@ -308,13 +356,14 @@ button {
     margin-top: 1em;
 }
 
+textarea {
+    width: 98.5%;
+    height: 15em;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
     height: unset;
-}
-
-textarea {
-    width: 98.5%;
 }
 
 fieldset.data {
@@ -343,11 +392,11 @@ fieldset.pago input {
 }
 
 input:valid {
-    background-color: palegreen;
+    border: 1px solid palegreen;
 }
 
 input:invalid {
-    background-color: lightpink;
+    border: 1px solid lightpink;
 }
 
 body form ul {
@@ -366,6 +415,7 @@ body form span.important {
 
 body form p {
     line-height: 1.4em;
+    padding-top: 2em;
 }
 
 /* Form rules end here */

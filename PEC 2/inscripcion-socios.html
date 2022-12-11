@@ -13,28 +13,36 @@
 <body>
     <header>
         <div class="header_title_and_logo">
-            <figure><img src="img/isologo-white.png"></figure>
+            <figure><img alt="Logo oficial del club" src="img/isologo-white.png"></figure>
             <div class="header_title"><a href="index.html" title="Página principal">ritmo</a></div>
         </div>
         <nav>
-            <a href="practica-el-running.html" title="Página con información sobre cómo practicar running">Practica
-                el <i lang="en">running</i></a> |
-            <a href="rutas.html" title="Página con información sobre rutas de running">Rutas</a> |
-            <a class="current" href="inscripcion-socios.html">Hazte socio</a>
+            <ul>
+                <li>
+                    <a href="practica-el-running.html"
+                        title="Página con información sobre cómo practicar running">Practica
+                        el <i lang="en">running</i></a>
+                </li>
+                <li>|</li>
+                <li><a href="rutas.html" title="Página con información sobre rutas de running">Rutas</a>
+                </li>
+                <li>|</li>
+                <li><a class="current" href="inscripcion-socios.html">Hazte socio</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <h1>Hazme socio del club de <i lang="en">running</i> Ritmo</h1>
         <p>Los campos señalados con * son obligatorios</p>
-        <form action="" method="post">
+        <form action="/action_page.php" method="post">
             <ul>
                 <li>
                     <fieldset>
                         <legend>Tipo de cuota *</legend>
                         <input type="radio" id="mensual" name="cuota" value="M" required>
-                        <label for="mensual">Mensual (30 €)</label></br>
+                        <label for="mensual">Mensual (30 €)</label><br>
                         <input type="radio" id="trimestral" name="cuota" value="T" required>
-                        <label for="trimestral">Trimestral (45 €)</label></br>
+                        <label for="trimestral">Trimestral (45 €)</label><br>
                         <input type="radio" id="anual" name="cuota" value="A" required>
                         <label for="anual">Anual (100 €)</label>
                     </fieldset>
@@ -44,26 +52,26 @@
                         <legend>Datos personales y de contacto</legend>
                         <ul>
                             <li>
-                                <label for="nombre">Nombre *</label></br>
+                                <label for="nombre">Nombre *</label><br>
                                 <input type="text" id="nombre" name="datos" minlength="2" maxlength="64"
                                     pattern="^[a-zA-Z'\- ]*$" required>
                             </li>
                             <li>
-                                <label for="apellidos">Apellidos *</label></br>
+                                <label for="apellidos">Apellidos *</label><br>
                                 <input type="text" id="apellidos" name="datos" minlength="2" maxlength="128"
                                     pattern="^[a-zA-Z'\- ]*$" required>
 
                             </li>
                             <li>
-                                <label for="correo">Correo electrónico *</label></br>
+                                <label for="correo">Correo electrónico *</label><br>
                                 <input type="email" id="correo" name="datos" required>
                             </li>
                             <li>
-                                <label for="tlf">Teléfono *</label></br>
+                                <label for="tlf">Teléfono *</label><br>
                                 <input type="tel" id="tlf" name="datos" required>
                             </li>
                             <li>
-                                <label for="nacimiento">Fecha de nacimiento *</label></br>
+                                <label for="nacimiento">Fecha de nacimiento *</label><br>
                                 <input type="date" id="nacimiento" name="datos" required>
                             </li>
                         </ul>
@@ -74,11 +82,11 @@
                         <legend>Otras informaciones</legend>
                         <ul>
                             <li>
-                                <label for="razón">¿Por qué estás interesado en hacerte socio?</label></br>
+                                <label for="razón">¿Por qué estás interesado en hacerte socio?</label><br>
                                 <textarea id="razón" name="user_message"></textarea>
                             </li>
                             <li>
-                                <label for="medio">¿Por qué medio nos has conocido?</label></br>
+                                <label for="medio">¿Por qué medio nos has conocido?</label><br>
                                 <select id="medio" name="user_origin">
                                     <option value="defecto">Selecciona una opción</option>
                                     <option value="prensa">Prensa</option>
@@ -95,13 +103,12 @@
                         <legend>Pago</legend>
                         <ul>
                             <li>
-                                <label for="titular">Titular de la cuenta *</label></br>
-                                <input type="text" id="titular" name="pago" required>
-                                </label>
+                                <label for="titular">Titular de la cuenta *</label><br>
+                                <input type="text" id="titular" name="pago" pattern="^[a-zA-Z'\- ]*$" required>
                             </li>
                             <li>
-                                <label for="número">Número de cuenta *</label></br>
-                                <input type="text" id="número" name="pago" required>
+                                <label for="número">Número de cuenta *</label><br>
+                                <input type="text" id="número" name="pago" pattern="\d{12,17}" required>
                             </li>
                         </ul>
                     </fieldset>
@@ -134,7 +141,7 @@
                             title="Artículo donde se describe detalladamente la política de privacidad">Política de
                             privacidad</a>.
                     </p>
-                    <input type="checkbox" id="acepto" name="política de privacidad" required></input>
+                    <input type="checkbox" id="acepto" name="política de privacidad" required>
                     <label for="acepto">He leído y acepto la <a href=""
                             title="Artículo donde se describe detalladamente la política de privacidad">política de
                             privacidad</a> *</label>
