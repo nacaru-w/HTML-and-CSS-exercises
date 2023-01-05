@@ -1,7 +1,7 @@
 ---
-title: "PEC 2"
+title: "PEC 3"
 subtitle: "HTML y CSS: Universitat Oberta de Catalunya"
-date: "Diciembre de 2022"
+date: "Enero de 2023"
 author: "Ignacio Casares Ruiz"
 documentclass: scrreprt
 colorlinks: true
@@ -67,11 +67,11 @@ Los navegadores que no soportan estos atributos simplemente utilizarán la image
 ```html
 <picture>
     <source media="(max-width: 799px)" srcset='img/Mémoire_sur_la_polyphagie_498px.jpg'>
-    <source media="(min-width: 800px)" srcset='srcset='img/Mémoire_sur_la_polyphagie_640px.jpg''>
+    <source media="(min-width: 800px)" srcset='img/Mémoire_sur_la_polyphagie_640px.jpg'>
     <img class="main" src='img/Mémoire_sur_la_polyphagie_640px.jpg'>
 </picture>
 ```
 
-En este caso, el navegador mostrará el archivo situado en la ruta `img/Mémoire_sur_la_polyphagie_498px.jpg` cuando la anchura máxima del _viewport_ sea de 799 píxeles, mientras que, a partir de ese tamaño, al ser la anchura mínima 800px, mostrará el archivo situado en la ruta `srcset='img/Mémoire_sur_la_polyphagie_640px.jpg'`.
+En este caso, el navegador mostrará el archivo situado en la primera ruta especificada cuando la anchura máxima del _viewport_ sea de 799 píxeles, mientras que, a partir de ese tamaño, al ser la anchura mínima 800px, mostrará el archivo situado en la segunda ruta.
 
 
