@@ -1,3 +1,171 @@
-body {
-    font-family: 'Inter', sans-serif;
+/* Custom properties start here */
+
+:root {
+    /* Colours for text */
+    --nav-text-colour: rgb(93, 95, 121);
+    --white-text-colour: rgb(255, 255, 255);
+
+    --normal-text-colour: rgb(0, 0, 0);
+    --gray-background-colour: rgb(227, 228, 230);
+
+    /* Contrast colours */
+    --contrast-colour-1: rgb(245, 157, 35);
+    --contrast-colour-2: rgb(240, 93, 80);
+
+    /* Link colours */
+    /* Header link colours */
+    --header-nav-link-colour: rgb(93, 95, 121);
+    --header-nav-link-hover-colour: rgb(245, 157, 35);
+    /* Main link colours */
+    --main-link-colour: rgb(245, 157, 35);
+    --main-link-hover-colour: rgb(93, 95, 121);
+    /* Footer link colours */
+    --footer-nav-link-colour: rgb(255, 255, 255);
+    --footer-nav-link-hover-colour: rgb(245, 157, 35);
+    /* Section-specific colours */
+    --index-referentes-section-link-colour: rgb(93, 95, 121);
+    --index-referentes-section-link-hover-colour: rgb(245, 157, 35);
+    --referentes-menu-link-colour: rgb(245, 157, 35);
+    --referentes-menu-link-hover-colour: rgb(93, 95, 121);
+
+    /* Buttons */
+    --button-bg-colour: rgb(240, 93, 80);
+    --button-text-colour: rgb(255, 255, 255);
 }
+
+/* Custom properties end here */
+/*
+/*
+/*
+/*
+/* Media queries start here */
+
+@media only screen and (min-width: 320px) {
+
+    header,
+    main {
+        width: 100%
+    }
+
+    header {
+        display: grid;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+
+    header,
+    main {
+        width: 80%
+    }
+
+    header {
+        display: grid;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 961px) {
+
+    header,
+    main {
+        width: 60%
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header ul {
+        display: flex;
+        padding-top: 2.6em;
+    }
+}
+
+/* Media queries end here */
+/*
+/*
+/*
+/*
+/* Global rules start here */
+
+header,
+main,
+footer {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+}
+
+div.container {
+    width: 6em;
+}
+
+div.container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Global rules end here */
+/*
+/*
+/*
+/*
+/* Global header rules start here */
+
+header {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+header ul li {
+    list-style-type: none;
+    padding: 0 1em;
+    white-space: nowrap;
+}
+
+header ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+header div.logo_and_subtext {
+    display: flex;
+    justify-content: center;
+}
+
+header div.logo_and_subtext div:last-child {
+    display: flex;
+    white-space: nowrap;
+    align-self: flex-end;
+}
+
+/* Global header rules end here */
+/* Global main rules start here */
+
+/* Global main rules end here */
+/* Global footer rules start here */
+
+footer {
+    width: 100%;
+}
+
+/* Global footer rules end here */
+/*
+/*
+/*
+/*
+/* index.html specific rules start here */
+
+/* index.html specific rules end here */
+/* iniciativas.html specific rules start here */
+
+/* iniciativas.html specific rules end here */
+/* referentes.html specific rules start here */
+
+/* referentes.html specific rules end here */
+/* 11-de-febrero.html specific rules start here */
+
+/* 11-de-febrero.html specific rules end here */
