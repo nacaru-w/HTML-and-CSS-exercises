@@ -42,7 +42,7 @@
 
 @media only screen and (min-width: 320px) {
 
-    /* header-specific */
+    /* Global */
 
     header,
     main {
@@ -57,6 +57,17 @@
     header nav {
         margin-top: 1em;
     }
+
+    footer {
+        padding: 1em 5% 1em 5%;
+    }
+
+    /* Footer-specific */
+    footer div.policy_nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
 
     /* index.html-specific */
 
@@ -79,7 +90,7 @@
 
 @media only screen and (min-width: 641px) {
 
-    /* header-specific */
+    /* Global */
 
     header,
     main {
@@ -93,6 +104,16 @@
 
     header nav {
         margin-top: 1em;
+    }
+
+    footer {
+        padding: 1em 22% 1em 22%;
+    }
+
+    /* Footer-specific */
+    footer div.policy_nav ul {
+        flex-direction: row;
+        gap: 1em;
     }
 
     /* index.html-specific */
@@ -121,7 +142,7 @@
 
 @media only screen and (min-width: 961px) {
 
-    /* header-specific */
+    /* Global */
 
     header,
     main {
@@ -141,6 +162,17 @@
     header nav {
         margin-top: 0;
     }
+
+    footer {
+        padding: 1em 30% 1em 30%;
+    }
+
+    /* Footer-specific */
+    footer div.policy_nav ul {
+        flex-direction: row;
+        gap: 1em;
+    }
+
 
     /* index.html-specific */
 
@@ -182,6 +214,15 @@ div.container {
 div.container img {
     width: 100%;
     height: auto;
+}
+
+body {
+    margin: 0;
+    line-height: 1.4em;
+}
+
+body a {
+    text-decoration: none;
 }
 
 /* Global rules end here */
@@ -244,7 +285,87 @@ header nav a:visited {
 /* Global footer rules start here */
 
 footer {
-    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    margin: 0;
+    margin-top: 3em;
+    color: var(--white-text-colour);
+    text-align: center;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer div.container {
+    margin: 0 auto;
+}
+
+footer li.siempre {
+    font-size: 1.15em;
+    padding: 1, 75em 0;
+    white-space: nowrap;
+}
+
+footer li input {
+    background-color: unset;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: solid 1px darkgrey;
+    padding: 1em;
+    color: var(--white-text-colour);
+    text-align: center;
+    font-size: 1.1em;
+    max-width: 100%;
+}
+
+footer li input::placeholder {
+    color: var(--white-text-colour);
+    text-align: center;
+    margin: 4em;
+}
+
+footer li input:focus {
+    outline: none !important;
+    border: 1px solid var(--contrast-colour-1);
+    box-shadow: 0 0 10px var(--white-text-colour)
+}
+
+footer form li {
+    padding: 0.5em 0;
+}
+
+footer button {
+    border: 0;
+    padding: 0.6em 0.75em;
+    font-size: 1rem;
+    color: var(--button-text-colour);
+    background-color: var(--button-bg-colour);
+    box-sizing: border-box;
+}
+
+footer div.policy_nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+footer div.policy_nav ul li {
+    white-space: nowrap;
+}
+
+footer div.other_info {
+    font-size: 0.75em;
+}
+
+
+footer div.other_info li {
+    padding: 0.25em 0;
 }
 
 /* Global footer rules end here */
