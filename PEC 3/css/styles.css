@@ -42,6 +42,8 @@
 
 @media only screen and (min-width: 320px) {
 
+    /* header-specific */
+
     header,
     main {
         width: 95%;
@@ -56,6 +58,8 @@
         margin-top: 1em;
     }
 
+    /* index.html-specific */
+
     main div.constellation {
         width: 100%;
     }
@@ -63,13 +67,23 @@
     main div.main_description {
         width: 100%;
     }
+
+    main div.woman {
+        width: 100%;
+    }
+
+    main div.woman>* {
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 641px) {
 
+    /* header-specific */
+
     header,
     main {
-        width: 80%
+        width: 75%
     }
 
     header {
@@ -80,6 +94,8 @@
     header nav {
         margin-top: 1em;
     }
+
+    /* index.html-specific */
 
     main div.constellation {
         width: 80%;
@@ -93,9 +109,19 @@
     main div.main_description {
         width: 100%;
     }
+
+    main div.woman {
+        width: 45%;
+    }
+
+    main div.woman>* {
+        text-align: left;
+    }
 }
 
 @media only screen and (min-width: 961px) {
+
+    /* header-specific */
 
     header,
     main {
@@ -116,12 +142,22 @@
         margin-top: 0;
     }
 
+    /* index.html-specific */
+
     main div.constellation {
         width: 30%;
     }
 
     main div.main_description {
         width: 70%;
+    }
+
+    main div.woman {
+        width: 23%;
+    }
+
+    main div.woman>* {
+        text-align: left;
     }
 }
 
@@ -255,6 +291,61 @@ main div.main_description h1 {
 main div.main_description p {
     padding: 0 1em 1em 1em;
     text-align: left;
+}
+
+h1.main_title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h1.main_title+div {
+    font-size: 0.75em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+h1.main-title+div a {
+    color: var(--main-link-colour)
+}
+
+main section.women {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+main div.woman:first-child {
+    margin-left: 0;
+}
+
+main div.woman:last-child {
+    margin-right: 0;
+}
+
+main div.woman figure {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+main div.woman figure img {
+    width: 100%;
+    height: auto;
+}
+
+main div.woman div.field {
+    font-size: 0.75em;
+    color: var(--index-referentes-section-link-colour)
+}
+
+main div.woman_name {
+    font-weight: bold;
+}
+
+main section.women a {
+    color: var(--index-referentes-section-link-colour)
 }
 
 /* index.html specific rules end here */
