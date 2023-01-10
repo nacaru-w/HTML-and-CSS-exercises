@@ -190,17 +190,21 @@
         width: 40%;
     }
 
+    div.description>* {
+        padding-left: 1em;
+    }
+
     div.description {
         width: 60%;
     }
 
     div.titles {
-        width: 30%;
+        width: 25%;
     }
 
     div.image_and_description {
         flex-direction: row;
-        width: 70%;
+        width: 75%;
     }
 
 }
@@ -281,11 +285,11 @@
     }
 
     figure.referentes_container {
-        width: 40%;
+        width: 35%;
     }
 
     div.description {
-        width: 60%;
+        width: 65%;
     }
 
     div.image_and_description {
@@ -581,6 +585,8 @@ main section.women a {
 
 h1.referentes_main_title {
     text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
 }
 
 section.referentes_main_no_title {
@@ -617,12 +623,38 @@ figure.referentes_container img {
     height: auto;
 }
 
-div.description>* {
-    padding-left: 1em;
+div.description {
+    margin: auto;
 }
 
 div.description p {
     margin: 0;
+}
+
+div.titles {
+    font-weight: bolder;
+    margin: auto;
+}
+
+div.titles h2 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    font-weight: bolder;
+    color: var(--contrast-colour-2);
+
+}
+
+div.job,
+div.date {
+    font-size: 0.75em;
+
+}
+
+div.job,
+div.name,
+div.date,
+div.description p {
+    color: var(--index-referentes-section-link-colour);
 }
 
 
