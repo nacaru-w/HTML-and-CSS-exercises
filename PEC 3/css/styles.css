@@ -86,6 +86,38 @@
     main div.woman>* {
         text-align: center;
     }
+
+    /* referentes.html-specific */
+
+    nav.referentes_nav ul {
+        flex-direction: row;
+    }
+
+    nav.referentes_nav ul li:not(:last-child)::after {
+        content: "·\00a0";
+    }
+
+    div.namecard {
+        flex-direction: column;
+        width: unset;
+    }
+
+    figure.referentes_container {
+        width: 100%;
+    }
+
+    div.description {
+        width: 100%;
+    }
+
+    div.titles {
+        width: 100%;
+    }
+
+    div.image_and_description {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 641px) {
@@ -138,6 +170,39 @@
     main div.woman>* {
         text-align: left;
     }
+
+    /* referentes.html-specific */
+
+    nav.referentes_nav ul {
+        flex-direction: row;
+    }
+
+    nav.referentes_nav ul li:not(:last-child)::after {
+        content: "·\00a0";
+    }
+
+    div.namecard {
+        flex-direction: row;
+        width: unset;
+    }
+
+    figure.referentes_container {
+        width: 40%;
+    }
+
+    div.description {
+        width: 60%;
+    }
+
+    div.titles {
+        width: 30%;
+    }
+
+    div.image_and_description {
+        flex-direction: row;
+        width: 70%;
+    }
+
 }
 
 @media only screen and (min-width: 961px) {
@@ -191,6 +256,41 @@
     main div.woman>* {
         text-align: left;
     }
+
+    /* referentes.html-specific */
+
+    nav.referentes_nav ul {
+        flex-direction: column;
+    }
+
+    nav.referentes_nav ul li:not(:last-child)::after {
+        content: none;
+    }
+
+    nav.referentes_nav {
+        width: 20%;
+    }
+
+    div.all_namecards {
+        width: 80%;
+    }
+
+    div.namecard {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    figure.referentes_container {
+        width: 40%;
+    }
+
+    div.description {
+        width: 60%;
+    }
+
+    div.image_and_description {
+        flex-direction: row;
+    }
 }
 
 /* Media queries end here */
@@ -199,6 +299,10 @@
 /*
 /*
 /* Global rules start here */
+
+li {
+    list-style-type: none;
+}
 
 header,
 main,
@@ -474,6 +578,53 @@ main section.women a {
 
 /* iniciativas.html specific rules end here */
 /* referentes.html specific rules start here */
+
+h1.referentes_main_title {
+    text-align: center;
+}
+
+section.referentes_main_no_title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+nav.referentes_nav ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.namecard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+div.image_and_description {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure.referentes_container {
+    margin: 0;
+}
+
+figure.referentes_container img {
+    width: 100%;
+    height: auto;
+}
+
+div.description>* {
+    padding-left: 1em;
+}
+
+div.description p {
+    margin: 0;
+}
+
 
 /* referentes.html specific rules end here */
 /* 11-de-febrero.html specific rules start here */
