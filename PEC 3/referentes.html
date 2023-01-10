@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div>
+        <div class="logo_and_subtext">
             <div class="container">
                 <img src="MaterialesPEC3/img/logo-ciencia-tecnologia.svg" alt="Logo principal de la página">
             </div>
@@ -347,17 +347,20 @@
         <div class="form">
             <span class="email"><a href="mailto:hola@cienciaytecnologia.org">hola@cienciaytecnologia.org</a></span>
             <form action="/action_page.php" method="post">
-                <li>Siempre al día con nuestro boletín de noticias</li>
-                <li>
-                    <input type="email" id="@" name="email" aria-label="email">
-                </li>
-                <li>
-                    <input type="checkbox" id="acepto" name="política de datos" required>
-                    <label for="acepto">He leído y acepto la política de protección de datos</label>
-                </li>
-                <li>
-                    <button>SUSCRÍBEME</button>
-                </li>
+                <ul>
+                    <li class="siempre">Siempre al día con nuestro boletín de noticias</li>
+                    <li>
+                        <input type="email" id="@" name="email" aria-label="email" placeholder="Escribe tu e-mail"
+                            size="30">
+                    </li>
+                    <li>
+                        <input type="checkbox" id="acepto" name="política de datos" required>
+                        <label for="acepto">Acepto la política de protección de datos</label>
+                    </li>
+                    <li>
+                        <button>SUSCRÍBEME</button>
+                    </li>
+                </ul>
             </form>
         </div>
         <div class="policy_nav">
